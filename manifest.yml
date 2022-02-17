@@ -1,8 +1,7 @@
 applications:
-- disk_quota: 1024M
+- buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
   name: LoginRegisterApp
-  path: . 
-  domain: mybluemix.net
-  instances: 1 
+  host: LoginRegisterApp
   memory: 64M 
+  stack: cflinuxfs2
   
